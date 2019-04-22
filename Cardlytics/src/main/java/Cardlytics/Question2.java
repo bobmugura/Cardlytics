@@ -51,3 +51,5 @@ class CardlyticsLinkedList {
         return node1;
     }
 }
+// As for elements with String case, we can make the class uses String or
+// Generic type instead of Integer type

@@ -2,6 +2,13 @@
     "configurations": [
         {
             "type": "java",
+            "name": "CodeLens (Launch) - Question3",
+            "request": "launch",
+            "mainClass": "Cardlytics.Question3",
+            "projectName": "Cardlytics"
+        },
+        {
+            "type": "java",
             "name": "CodeLens (Launch) - Question2",
             "request": "launch",
             "mainClass": "Cardlytics.Question2",
