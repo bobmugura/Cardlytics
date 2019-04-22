@@ -12,40 +12,40 @@ public class Question1Test {
     @Test
     public void equilateralTriangleTest() {
         Triangle q1 = new Triangle(6, 6, 6);
-        assertEquals(q1.type, TriangleType.EQUILATERAL);
-        assertEquals(q1.type.getName(), TriangleType.EQUILATERAL.getName());
+        assertEquals(TriangleType.EQUILATERAL, q1.type);
+        assertEquals(TriangleType.EQUILATERAL.getName(), q1.type.getName());
     }
 
     @Test
     public void isoscelesTriangleTest() {
         Triangle q1 = new Triangle(22, 22, 10);
-        assertEquals(q1.type, TriangleType.ISOSCELES);
-        assertEquals(q1.type.getName(), TriangleType.ISOSCELES.getName());
+        assertEquals(TriangleType.ISOSCELES, q1.type);
+        assertEquals(TriangleType.ISOSCELES.getName(), q1.type.getName());
     }
 
     @Test
     public void scaleneTriangleTest() {
         Triangle q1 = new Triangle(13, 8, 10);
-        assertEquals(q1.type, TriangleType.SCALENE);
-        assertEquals(q1.type.getName(), TriangleType.SCALENE.getName());
+        assertEquals(TriangleType.SCALENE, q1.type);
+        assertEquals(TriangleType.SCALENE.getName(), q1.type.getName());
     }
 
     @Test
     public void nonTriangleTest() {
         Triangle q1 = new Triangle(10, 2, 6);
-        assertEquals(q1.type, TriangleType.NA);
-        assertEquals(q1.type.getName(), TriangleType.NA.getName());
+        assertEquals(TriangleType.NA, q1.type);
+        assertEquals(TriangleType.NA.getName(), q1.type.getName());
 
         q1 = new Triangle(-3, 4, 10);
-        assertEquals(q1.type, TriangleType.NA);
-        assertEquals(q1.type.getName(), TriangleType.NA.getName());
+        assertEquals(TriangleType.NA, q1.type);
+        assertEquals(TriangleType.NA.getName(), q1.type.getName());
 
         q1 = new Triangle(-3, -4, 10);
-        assertEquals(q1.type, TriangleType.NA);
-        assertEquals(q1.type.getName(), TriangleType.NA.getName());
+        assertEquals(TriangleType.NA, q1.type);
+        assertEquals(TriangleType.NA.getName(), q1.type.getName());
 
         q1 = new Triangle(3, 4, -10);
-        assertEquals(q1.type, TriangleType.NA);
-        assertEquals(q1.type.getName(), TriangleType.NA.getName());
+        assertEquals(TriangleType.NA, q1.type);
+        assertEquals(TriangleType.NA.getName(), q1.type.getName());
     }
 }
